@@ -1,0 +1,27 @@
+/* pc */
+@media (min-width: 1024px) {
+    
+}
+/* tablet*/
+@media (min-width: 740px)  and (max-width: 1023px) {
+   .tabletmobile {
+    display: none;
+   }
+   .title_tablet {
+    position: absolute;
+    left: 49%;
+    bottom: -28%;
+    font-size: 61px;
+   }
+}
+/* mobile */
+@media (max-width: 740px ) {
+    .tabletmobile {
+        display: none;
+       }
+       .title {
+       position: absolute;
+    left: 49%;
+    bottom: -33%;
+       }
+}
