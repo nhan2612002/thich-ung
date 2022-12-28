@@ -1,0 +1,104 @@
+.a-link-header {
+    color: white;
+    position: relative;
+    /*transition-property: background-color;
+     /*transition-duration: 0.3s;  thời gian thay đổi */
+    /*transition-property: color;
+     /*transition-duration: 0.3s;
+    /* transition-delay: 0.1s; đelay */
+    /*transition-timing-function: ease-in-out; */
+    font-weight: 500;
+    display: block;
+    padding: 5px 0px;
+
+}
+
+.a-link-header::after {
+    content: '';
+    position: absolute;
+    transform: scaleX(0);
+    height: 1px;
+    width: 100%;
+    background-color: yellow;
+    left: 0px;
+    bottom: 0px;
+    transition: all 0.5s ease-in-out;
+}
+
+.a-link-header:hover::after {
+    transform: scaleX(1);
+}
+
+.a-link-header:hover {
+    color: red;
+    /* background-color: rgba(255, 0, 208, 0.366);
+    border-radius: 10px; */
+}
+
+/* hover button */
+.button {
+    background: none;
+    color: #ccc;
+    width: 240px;
+    height: 80px;
+    border: 1px solid #338033;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+    background-color: rgb(81, 149, 174);
+
+}
+.button:focus {
+    outline: none;
+
+}
+.button::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%; 
+    background: rgba(255, 255, 255,.5);
+    opacity: .9s;
+    filter: blur(30px);
+    transform: translateX(-130px) skewX(-15deg);
+}
+.button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 60px;
+    height: 100%; 
+    background:rgba(255, 255, 255,.2);
+    opacity: 0;
+    filter: blur(30px);
+    transform: translateX(-100px) scaleX(-15deg);
+}
+.button:hover{
+    cursor: pointer;
+    background: rgba(255, 0, 0, 0.279);
+}
+.button:hover::before{
+    transform: translateX(300px) skewx(-15deg);
+    opacity: .6;
+    transition: .9s;
+}
+.button:hover::after{
+    transform: translateX(300px) skewx(-15deg);
+    opacity: 1;
+    transition: .9s;
+}
+/*.card-img:hover {
+    transform: scale(1.1);
+}*/
+.card:hover {
+    transform: translateY(-1%);
+    box-shadow: 20px 20px 50px rgba(128, 128, 128, 0.33);
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}

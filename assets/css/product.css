@@ -1,0 +1,70 @@
+header{
+    position: sticky;
+    z-index: 10;
+    top: 0px;
+}
+.nav_menu {
+    flex-basis: 100%;
+    flex-grow: 0;
+    align-items: center;
+}
+.button_menu{
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: var(--bs-navbar-color);
+    background-color: red; 
+    border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    transition: var(--bs-navbar-toggler-transition);
+}
+.a_link-none {
+    color: white;
+    font-size: 20px!important;
+}
+.header_color {
+    background-color: yellowgreen;
+}
+.card_add-button {
+    background: none;
+    color: red;
+    width: 127%;
+    height: 33px;
+    border: 1px solid #338033;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+    background-color: rgb(81, 149, 174);
+    font-weight: 600;
+}
+.card_add {
+    display: flex;
+    align-items: center;
+}
+.price {
+    font-size: 12px;
+    color: #ba5312;
+    font-weight: 500;
+    border-bottom: 2px solid;
+}
+
+h5.card-title {
+    font-size: 15px;
+    color: black;
+    font-weight: 600;
+}
+.title-1 {
+    position: relative;
+    right: 0;
+    margin-bottom: 19px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #00a2d1;
+    padding: 4px 20px;
+    height: 31px;
+    transform: skew(18deg);
+}
+.container_title-1 {
+    font-style: italic;
+}

@@ -13,15 +13,14 @@ ul,li {
 }
 a {
     text-decoration: none;
-  
 }
+
 .center {
    position: absolute;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
 }
-
   .col {
     text-align: center;
     background-color:white;
@@ -32,13 +31,17 @@ a {
 
   .card-link {
     display: block;
-    height: 0;
-    padding-bottom: 90%;
+    height: auto;
+    /*padding-bottom: 90%; */
     position: relative;
     overflow: hidden;
+    padding: 5px;
   } /* the a */
   .card-img {
       max-width: 100%;
       height: auto;
+      padding: 10px;
+      
   } /* img */
+  
   /* the card them style max-width:500px */

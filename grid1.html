@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/hover.css">
+   
+</head>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        background-color: black;
+    }
+    .price{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 0;
+    font-weight: 700;
+    color: #fff;
+    background-color: #00a2d1;
+    padding: 4px 20px;
+    min-width: 128px;
+    }
+    .price-new {
+
+    }
+    .price-new::before {
+    content: '';
+    position: absolute;
+    left: -16px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 32px solid transparent;
+    border-bottom: 0 solid transparent;
+    border-right: 16px solid #00a2d1;
+    }
+</style>
+<body>
+    <div class="wrapper">
+        <div class="btn center">
+            <button  type="button" class="center button">HOVER ME</button>
+        </div>
+    </div>
+
+    <div class="price">
+        <span class="price-new">21222.0000</span>
+    </div>
+    
+</body>
+
+</html>
